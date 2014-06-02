@@ -4,6 +4,11 @@ Boot2docker [vbkick](https://github.com/wilas/vbkick) template. Helps create a n
 
 ## Howto
 
+### change definition (change the target of a symlink)
+```
+  ln -fs definition-persist-data.cfg definition.cfg
+```
+
 ### create and play with the new VM
 ```
     vbkick  build       boot2docker     # create the new VM
@@ -15,7 +20,8 @@ Boot2docker [vbkick](https://github.com/wilas/vbkick) template. Helps create a n
 
     vbkick  shutdown    boot2docker     # finnish work
 
-    vbkick  resnap      SmartOS_box     # load saved work - note that you don't need configure "persist data"
+    vbkick  resnap      SmartOS_box     # load saved work - note that you don't need configure "persist data",
+                                        # "persist data" is useful if you need disk space bigger than size of RAM assign to the VM
     vbkick  on          SmartOS_box     # start VM
     vbkick  ssh         boot2docker     # continue work
 ```

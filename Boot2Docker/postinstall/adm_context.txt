@@ -1,2 +1,3 @@
 # this is comment
 # Note: scripts are exec in order defined here
+persist.sh
