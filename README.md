@@ -1,6 +1,6 @@
 # Description
 
-Place where a new vbkick templates cool down before will be moved to [templates repository](https://github.com/wilas/vbkick-templates).
+Place for a vbkick templates which requires a bit more love before will be moved to [templates repository](https://github.com/wilas/vbkick-templates).
 
 Some templates because of their nature (e.g development, experimental) will never be moved, a good example for this is Debian "Sid".
 
