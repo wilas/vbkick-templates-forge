@@ -6,7 +6,7 @@ Boot2docker [vbkick](https://github.com/wilas/vbkick) template. Helps create a n
 
 ### change definition (change the target of a symlink)
 ```
-  ln -fs definition-persist-data.cfg definition.cfg
+  ln -fs vbmachine-persist-data.cfg vbmachine.cfg
 ```
 
 ### create and play with the new VM

@@ -6,7 +6,7 @@ Debian "Sid" [vbkick](https://github.com/wilas/vbkick) template. Help creates Va
 
 ### change definition (change the target of a symlink)
 ```
-    ln -fs definition-sid-x86_64-docker.cfg definition.cfg
+    ln -fs vbmachine-sid-x86_64-docker.cfg vbmachine.cfg
 ```
 
 ### create new vagrant base box

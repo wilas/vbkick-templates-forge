@@ -7,7 +7,7 @@ More: [Nemo VM on Virtualbox](http://xavinux.blogspot.co.uk/2013/06/installing-n
 
 ### choose definition (change the target of a symlink)
 ```
-    ln -fs definition-i486.cfg definition.cfg
+    ln -fs vbmachine-i486.cfg vbmachine.cfg
 ```
 
 ### create the new VM (child steps)
@@ -20,7 +20,7 @@ More: [Nemo VM on Virtualbox](http://xavinux.blogspot.co.uk/2013/06/installing-n
 ```
     vbkick  build           nemo
     vbkick  postinstall     nemo     # update is done here
-    vbkick  ssh             nemo     # as ssh_user="root" in definition
+    vbkick  ssh             nemo     # as ssh_user="root" in vbmachine.cfg
     vbkick  destroy         nemo
 ```
 

@@ -6,7 +6,7 @@ SmartOS [vbkick](https://github.com/wilas/vbkick) template. Helps create a new S
 
 ### choose definition (change the target of a symlink)
 ```
-    ln -fs definition-iso-dhcp.cfg definition.cfg
+    ln -fs vbmachine-iso-dhcp.cfg vbmachine.cfg
 ```
 
 ### create and play with the new VM
@@ -26,7 +26,7 @@ SmartOS [vbkick](https://github.com/wilas/vbkick) template. Helps create a new S
 ```
     vbkick  build        SmartOS_box
     vbkick  postinstall  SmartOS_box    #here is created "Vagrant SmartMachine"
-    vbkick  ssh          SmartOS_box    #as ssh_user="root" in definition
+    vbkick  ssh          SmartOS_box    #as ssh_user="root" in vbmachine.cfg
     $ zoneadm list                      #on Guest VM, should list zone with "zone" name
     vbkick  shutdown     SmartOS_box
     vbkick  export       SmartOS_box
@@ -35,7 +35,7 @@ SmartOS [vbkick](https://github.com/wilas/vbkick) template. Helps create a new S
     vagrant box list
 
     vbkick  on           SmartOS_box    #start VM
-    vbkick  ssh          SmartOS_box    #ssh to Vagrant SmartMachine" as ssh_user="vagrant" (NB. update definition.cfg before this step)
+    vbkick  ssh          SmartOS_box    #ssh to Vagrant SmartMachine" as ssh_user="vagrant" (NB. update vbmachine.cfg before this step)
 ```
 
 
@@ -59,9 +59,9 @@ iso - boot from iso file
 
 dhcp - use dhcp as the IP address
 
-**definition-usb-dhcp.cfg** & **definition-iso-dhcp.cfg** - postinstall is not needed, creates basic SmartOS (no vagrant), allow login to GlobalZone as root (vbkick ssh SmartOS_box)
+**vbmachine-usb-dhcp.cfg** & **vbmachine-iso-dhcp.cfg** - postinstall is not needed, creates basic SmartOS (no vagrant), allow login to GlobalZone as root (vbkick ssh SmartOS_box)
 
-**definition-usb-dhcp-vagrant.cfg** & **definition-iso-dhcp-vagrant.cfg** - creates vagrant SmartMachine in postinstall step (famous @aszeszo script is used - look to postinstall/vagrant.sh)
+**vbmachine-usb-dhcp-vagrant.cfg** & **vbmachine-iso-dhcp-vagrant.cfg** - creates vagrant SmartMachine in postinstall step (famous @aszeszo script is used - look to postinstall/vagrant.sh)
 
 ### Note
  - Sometimes after creating "Vagrant SmartMachine" and reboot, SmartOS starting crash and "vagrant zone" is gone.

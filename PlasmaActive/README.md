@@ -15,7 +15,7 @@ More: [Plasma_Active_on_VirtualBox](http://community.kde.org/Plasma/Active/Virtu
 ```
     vbkick  build           plas
     vbkick  postinstall     plas    # update and other tuning is done here
-    vbkick  ssh             plas    # as ssh_user="root" in definition
+    vbkick  ssh             plas    # as ssh_user="root" in vbmachine.cfg
     vbkick  destroy         plas
 ```
 

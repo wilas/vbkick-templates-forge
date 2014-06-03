@@ -6,7 +6,7 @@ Debian "Jessie" [vbkick](https://github.com/wilas/vbkick) template. Help creates
 
 ### change definition (change the target of a symlink)
 ```
-    ln -fs definition-jessie-x86_64-docker.cfg definition.cfg
+    ln -fs vbmachine-jessie-x86_64-docker.cfg vbmachine.cfg
 ```
 
 ### create new vagrant base box
