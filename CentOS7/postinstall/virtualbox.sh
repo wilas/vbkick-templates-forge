@@ -16,13 +16,13 @@ fi
 mnt_point=/mnt
 if [[ -b /dev/sr1 ]]; then
     if grep -q /dev/sr1 /proc/mounts; then
-        mnt_point=$(printf $(grep /dev/sr1 /proc/mounts | cut -f2 -d' '))
+        mnt_point=$(echo $(grep /dev/sr1 /proc/mounts | cut -f2 -d' '))
     else
         mount /dev/sr1 "${mnt_point}"
     fi
 elif [[ -b /dev/sr0 ]]; then
     if grep -q /dev/sr0 /proc/mounts; then
-        mnt_point=$(printf $(grep /dev/sr0 /proc/mounts | cut -f2 -d' '))
+        mnt_point=$(echo $(grep /dev/sr0 /proc/mounts | cut -f2 -d' '))
     else
         mount /dev/sr0 "${mnt_point}"
     fi

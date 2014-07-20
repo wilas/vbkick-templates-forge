@@ -7,7 +7,7 @@ virtualbox.sh
 ruby.sh
 ansible.sh
 puppet.sh
-#chef.sh
+chef.sh
 cfengine.sh
 docker.sh
 #rh_devtoolset.sh
