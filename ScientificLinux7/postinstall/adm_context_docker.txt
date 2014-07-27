@@ -1,6 +1,6 @@
 # this is comment
 # Note: scripts are exec in order defined here
-sl_alpha_fixes.sh
+sl_beta_fixes.sh
 base.sh
 repos.sh
 sudo.sh
