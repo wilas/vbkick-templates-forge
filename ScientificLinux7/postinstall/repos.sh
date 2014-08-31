@@ -14,9 +14,9 @@ fi
 if ! yum list installed epel-release >/dev/null 2>&1; then
     rpm --import http://dl.fedoraproject.org/pub/epel/RPM-GPG-KEY-EPEL-7
     if [[ "${arch}" == 'x86_64' ]]; then
-        rpm -ivh http://download.fedoraproject.org/pub/epel/beta/7/x86_64/epel-release-7-0.2.noarch.rpm
+        rpm -ivh http://download.fedoraproject.org/pub/epel/beta/7/x86_64/epel-release-7-1.noarch.rpm
     elif [[ "${arch}" == 'i386' ]] || [[ "${arch}" = 'i686' ]]; then
-        echo "EPEL for i386 is not available yet (11/07/2014)."
+        echo "EPEL for i386 is not available yet (30/08/2014)."
         exit 1
     fi
 fi
@@ -27,7 +27,7 @@ fi
 #    if [[ "${arch}" == 'x86_64' ]]; then
 #        rpm -ivh http://dl.atrpms.net/el7-x86_64/atrpms/stable/atrpms-repo-7-7.el7.x86_64.rpm
 #    elif [[ "${arch}" == 'i386' ]] || [[ "${arch}" == 'i686' ]]; then
-#        echo "Atrpms for i386 is not available yet (11/07/2014)."
+#        echo "Atrpms for i386 is not available yet (30/08/2014)."
 #        exit 1
 #    fi
 #fi
