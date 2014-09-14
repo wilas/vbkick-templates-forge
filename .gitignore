@@ -1,6 +1,11 @@
+*~
 *.swp
-*.pyc
 *.box
+*.ova
+*.ovf
+*.vmdk
+*.mf
 *.iso
+*.webm
 */iso/*
 */keys/*
